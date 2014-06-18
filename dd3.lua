@@ -1,7 +1,37 @@
+ entries = {
+   post0001 = {
+   title = "First Update : 06/18/2014",
+   org = "skvmb",
+   email = "operator.dd3@gmail.com",
+   contact = "Jacob Gardner",
+   description = [[
+     I, Jacob Gardner am proud to present the First
+     real update! This update brings multiple entry
+     support.
+     
+     Stay tooned!]]
+   }
+ 
+   entry = {
+   title = "Initial Commit : 06/17/2014", 
+   org = "skvmb", 
+   email = "operator.dd3@gmail.com", 
+   contact = "Jacob Gardner", 
+   description = [[ 
+     skvCMS is a very simple Content Management System 
+     created in Lua. This page will reflect the updates, 
+     and revisions throughout the development process.
+      
+     skvCMS's birthday is today: June 17, 2014]] 
+     
+     }
+     
+   } 
+
+ 
  function fwrite (fmt, ...) 
    return io.write(string.format(fmt, ...)) 
- end
- 
+ end 
  function writeheader() 
    io.write([[ 
      <html> 
@@ -12,17 +42,14 @@
      <br> 
    ]]) 
  end 
- 
  function entry1 (o) 
    count = count + 1 
    local title = o.title or '(no title)' 
    fwrite('<li><a href="#%d">%s</a>\n', count, title) 
  end 
- 
  function writetail () 
    fwrite('</body></html>\n') 
  end 
- 
  function entry2 (o) 
    count = count + 1 
    fwrite('<hr>\n<h3>\n') 
@@ -42,13 +69,12 @@
      fwrite('Contact: %s\n', o.contact) 
    end 
  end 
- 
  function digest (o) 
    count = 0 
    --f = loadfile(inputfile) 
    --f = loadstring(entry) 
    --entry = entry1 
-   entry1(entry) 
+   entry1(entries) 
    fwrite('<ul>\n') 
    --f() 
    fwrite('</ul>\n') 
@@ -56,20 +82,6 @@
    entry2(entry) 
  end 
  
- entry = { 
-   title = "Initial Commit : 06/17/2014", 
-   org = "skvmb", 
-   url = "http://skvmb.github.com", 
-   email = "operator.dd3@gmail.com", 
-   contact = "Jacob Gardner", 
-   description = [[ 
-     skvCMS is a very simple Content Management System 
-     created in Lua. This page will reflect the updates, 
-     and revisions throughout the development process.
-      
-     skvCMS's birthday is today: June 17, 2014]] 
-   } 
-
 -- MAIN PROGRAM 
  cls() 
  --local inputfile = 'db.lua' 
@@ -79,10 +91,18 @@
  --f = loadstring(entry) 
  --entry = entry1
  fwrite('<ul>\n') 
- entry1(entry) 
+ for _,i in pairs(entries)  do
+    entry1(i)
+    --print("**** " .. i.title)
+ end 
+ --entry1(entries.entry) 
  --f() 
  fwrite('</ul>\n') 
- count = 0 
- entry2(entry) 
+ count = 0
+ for _,i in pairs(entries) do
+   entry2(i)
+ end
+ --entry2(entries.entry) 
  --f() 
  writetail() 
+    
