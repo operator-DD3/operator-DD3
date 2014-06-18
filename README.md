@@ -1,7 +1,7 @@
 operator-DD3
 ============
 
-Custom Site Generator
+### Static Site Generator
 
 An (Extremely Basic and Limited) Static Site Generator made in Lua.
 
