@@ -61,25 +61,14 @@
    end 
    fwrite('\n</h3>\n') 
    if o.description then 
-     fwrite('%s<p>\n', string.gsub(o.description, '\n\n+', '<p>\n')) 
+     fwrite('<p>')
+     fwrite('%s<p>\n', string.gsub(o.description, '\n\n+', '</p>\n')) 
    end 
    if o.email then 
      fwrite('Contact: <a href="mailto:%s">%s</a>\n', o.email, o.contact or o.email) 
    elseif o.contact then 
      fwrite('Contact: %s\n', o.contact) 
    end 
- end 
- function digest (o) 
-   count = 0 
-   --f = loadfile(inputfile) 
-   --f = loadstring(entry) 
-   --entry = entry1 
-   entry1(entries) 
-   fwrite('<ul>\n') 
-   --f() 
-   fwrite('</ul>\n') 
-   count = 0 
-   entry2(entry) 
  end 
  
 -- MAIN PROGRAM 
@@ -88,8 +77,6 @@
  writeheader() 
  count = 0 
  --f = loadfile(inputfile) 
- --f = loadstring(entry) 
- --entry = entry1
  fwrite('<ul>\n') 
  for _,i in pairs(entries)  do
     entry1(i)
