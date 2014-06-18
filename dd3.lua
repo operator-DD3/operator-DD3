@@ -1,6 +1,7 @@
  function fwrite (fmt, ...) 
    return io.write(string.format(fmt, ...)) 
- end 
+ end
+ 
  function writeheader() 
    io.write([[ 
      <html> 
@@ -11,14 +12,17 @@
      <br> 
    ]]) 
  end 
+ 
  function entry1 (o) 
    count = count + 1 
    local title = o.title or '(no title)' 
    fwrite('<li><a href="#%d">%s</a>\n', count, title) 
  end 
+ 
  function writetail () 
    fwrite('</body></html>\n') 
  end 
+ 
  function entry2 (o) 
    count = count + 1 
    fwrite('<hr>\n<h3>\n') 
@@ -38,6 +42,7 @@
      fwrite('Contact: %s\n', o.contact) 
    end 
  end 
+ 
  function digest (o) 
    count = 0 
    --f = loadfile(inputfile) 
@@ -50,6 +55,7 @@
    count = 0 
    entry2(entry) 
  end 
+ 
  entry = { 
    title = "Initial Commit : 06/17/2014", 
    org = "skvmb", 
