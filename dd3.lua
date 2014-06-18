@@ -32,8 +32,7 @@
    end 
    fwrite('\n</h3>\n') 
    if o.description then 
-     fwrite('<p>')
-     fwrite('%s</p>\n', string.gsub(o.description, '\n\n+', '<p>\n')) 
+     fwrite('<p>%s</p>\n', o.description) 
    end 
    if o.email then 
      fwrite('Contact: <a href="mailto:%s">%s</a>\n', o.email, o.contact or o.email) 
