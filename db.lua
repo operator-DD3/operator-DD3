@@ -31,7 +31,7 @@
    series = 0, 
    title = "Initial Commit", 
    org = "skvmb", 
-   url = "http://skvmb.github.com", 
+   url = "http://operator-dd3.github.io", 
    contact = "Jacob Gardner", 
    description = [[ 
      LuaCMS is a very simple Content Management system 
