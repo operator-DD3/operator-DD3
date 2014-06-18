@@ -10,7 +10,7 @@
      support.
      
      Stay tooned!]]
-   }
+   },
  
    entry = {
    title = "Initial Commit : 06/17/2014", 
