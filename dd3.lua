@@ -72,24 +72,20 @@
  end 
  
 -- MAIN PROGRAM 
- cls() 
- --local inputfile = 'db.lua' 
+
  writeheader() 
  count = 0 
- --f = loadfile(inputfile) 
  fwrite('<ul>\n') 
  for _,i in pairs(entries)  do
     entry1(i)
     --print("**** " .. i.title)
  end 
- --entry1(entries.entry) 
- --f() 
  fwrite('</ul>\n') 
+ 
  count = 0
  for _,i in pairs(entries) do
    entry2(i)
  end
- --entry2(entries.entry) 
- --f() 
+
  writetail() 
     
