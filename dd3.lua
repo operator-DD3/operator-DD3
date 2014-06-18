@@ -1,6 +1,4 @@
-
- 
- function fwrite (fmt, ...) 
+function fwrite (fmt, ...) 
    return io.write(string.format(fmt, ...)) 
  end 
  function writeheader() 
@@ -13,6 +11,9 @@
      <br> 
    ]]) 
  end 
+ function footer()
+   fwrite("<center>Powered by DD3</center>")
+ end
  function entry1 (o) 
    count = count + 1 
    local title = o.title or '(no title)' 
@@ -59,5 +60,6 @@
    entry2(i)
  end
 
+ footer()
  writetail() 
     
