@@ -4,10 +4,10 @@ function fwrite (fmt, ...)
  function writeheader() 
    io.write([[ 
      <html> 
-     <head><title>Custom CMS in Lua</title></head> 
+     <head><title>operator-DD3</title></head> 
      <body bgcolor="#00FF00"> 
-     Here are descriptions of this project and 
-     the milestones reached developing this system. 
+     <h1>operator-DD3</h>
+     <h2>Static Site Generator</h2>
      <br> 
    ]]) 
  end 
