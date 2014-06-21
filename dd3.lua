@@ -5,7 +5,12 @@ function fwrite (fmt, ...)
    io.write([[ 
      <html> 
      <head><title>operator-DD3</title></head> 
-     <body bgcolor="#00FF00"> 
+     <style>
+     body {
+     background: #000000;
+     color: #FFFFFF;
+     }
+     </style>
      <h1>operator-DD3</h>
      <h2>Static Site Generator</h2>
      <br> 
