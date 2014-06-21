@@ -25,7 +25,7 @@ function fwrite (fmt, ...)
    ]]) 
  end 
  function footer()
-   fwrite("<center>Powered by DD3</center>")
+   fwrite("<center>Powered by <a href="operator-dd3.github.io/operator-DD3">DD3</a></center>")
  end
  function entry1 (o) 
    count = count + 1 
