@@ -10,13 +10,20 @@ function fwrite (fmt, ...)
      background: #000000;
      color: #FFFFFF;
      }
-     h1, h2, h3, h4, h5, h6 {
-     background: #00FF00;
+     h1 {
+      background: linear-gradient(#00FF00, #313131);
+        color: #000000;
+     }
+     h2, h3, h4, h5, h6 {
+     background: linear-gradient(#009900, #313131);
      color: #000000;
      }
      p {
      background: #313131;
      color: #00FF00;
+     }
+     a {
+      color: white;
      }
      </style>
      <h1>operator-DD3</h>
