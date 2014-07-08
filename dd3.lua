@@ -5,25 +5,59 @@ function fwrite (fmt, ...)
    io.write([[ 
      <html> 
      <head><title>operator-DD3</title></head> 
+     <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
      <style>
+     legend {
+      border: 1px solid #007100;
+      background: #007100;
+      border-radius: 4px;
+     }
+     fieldset {
+      margin: 8px;
+      padding: 8px;
+      background: #007100;
+      border: 1px solid #00FF00;
+      border-radius: 4px;
+     }
      body {
+      font-family: 'Special Elite', cursive;
      background: #000000;
      color: #FFFFFF;
      }
      h1 {
-      background: linear-gradient(#00FF00, #313131);
+      font-family: 'Special Elite', cursive;
+      font-size: 48px;
+      text-shadow: 4px 4px 4px #a00;
+      background: linear-gradient(#003100, #00FF00, #003100);
+      border: 1px solid #00FF00;
+      border-radius: 4px;
         color: #000000;
      }
-     h2, h3, h4, h5, h6 {
-     background: linear-gradient(#009900, #313131);
+     h2 {
+      font-family: 'Special Elite', cursive;
+      font-size: 36px;
+      text-shadow: 4px 4px 4px #a00;
+      background: linear-gradient(#003100, #00FF00, #003100);
+      border: 1px solid #00FF00;
+      border-radius: 4px;
+        color: #000000;
+     }
+     h3, h4, h5, h6 {
+      font-family: 'Special Elite', cursive;
+      text-shadow: 2px 2px 2px #a00;
+     background: linear-gradient(#007100, #008100, #007100);
      color: #000000;
      }
      p {
-     background: #313131;
-     color: #00FF00;
+     
+      font-family: 'Special Elite', cursive;
+     color: #000000;
      }
      a {
-      color: white;
+      font-family: 'Special Elite', cursive;
+      text-shadow: 2px 2px 2px #a00;
+      font-family: 'Special Elite', cursive;
+      color: #00FF00;
      }
      </style>
      <h1>operator-DD3</h>
