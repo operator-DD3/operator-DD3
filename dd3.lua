@@ -78,14 +78,14 @@ function fwrite (fmt, ...)
  end 
  function entry2 (o) 
    count = count + 1 
-   fwrite('<hr>\n<h3>\n') 
+   fwrite('<hr>\n<fieldset><h3>\n') 
    local href = o.url and string.format(' href="%s"', o.url) or '' 
    local title = o.title or o.org or 'org' 
    fwrite('<a name="%d"%s>%s</a>\n', count, href, title) 
    if o.title and o.org then 
      fwrite('<br>\n<small><em>%s</em></small>', o.org) 
    end 
-   fwrite('\n</h3>\n') 
+   fwrite('\n</h3></fieldset>\n') 
    if o.description then 
      fwrite('<p>%s</p>\n', o.description) 
    end 
