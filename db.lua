@@ -1,12 +1,10 @@
  entries={}
    entries[4] = { 
-   series = 3, 
    title = 'Check it out', 
    description = [[This is now on github. 
    Visit <a href="https://github.com/operator-dd3/operator-dd3">operator-dd3</a>]] 
    }
    entries[3] = { 
-   series = 2, 
    title = "External Database Support: 06/18/2014", 
    org = "skvmb", 
    email = "operator.dd3@gmail.com", 
@@ -16,7 +14,6 @@
    database.]] 
    }
    entries[2] = { 
-   series = 1, 
    title = "First Update : 06/18/2014", 
    org = "skvmb", 
    email = "operator.dd3@gmail.com", 
@@ -28,7 +25,6 @@
      Stay tooned!]] 
    }
  entries[1]={ 
-   series = 0, 
    title = "Initial Commit", 
    org = "skvmb", 
    url = "http://operator-dd3.github.io", 
