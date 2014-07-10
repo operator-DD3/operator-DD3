@@ -34,9 +34,9 @@
    url = "http://operator-dd3.github.io", 
    contact = "Jacob Gardner", 
    description = [[ 
-     LuaCMS is a very simple Content Management system 
+     operator-dd3 is a very simple Content Management system 
      created in Lua. This page will reflect the updates, 
      and revisions throughout the development process. 
-     LuaCMS's birthday is today: June 17, 2014]] 
+     DD3s birthday is today: June 17, 2014]] 
    } 
  
