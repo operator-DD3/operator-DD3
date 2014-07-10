@@ -85,7 +85,7 @@ function fwrite (fmt, ...)
    if o.title and o.org then 
      fwrite('<br>\n<small><em>%s</em></small>', o.org) 
    end 
-   fwrite('\n</h3></fieldset>\n') 
+   fwrite('\n</h3>\n') 
    if o.description then 
      fwrite('<p>%s</p>\n', o.description) 
    end 
@@ -94,6 +94,7 @@ function fwrite (fmt, ...)
    elseif o.contact then 
      fwrite('Contact: %s\n', o.contact) 
    end 
+   io.write('</fieldset>\n')
  end 
  
 -- MAIN PROGRAM 
